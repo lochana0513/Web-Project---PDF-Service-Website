@@ -1,0 +1,59 @@
+#workArea {
+    min-height: 300px;
+    border: 2px dashed #ccc;
+    margin: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Creates 6 columns */
+    gap: 20px;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    border-radius: 1rem;
+  }
+  .pdf-container {
+    margin-bottom: 20px;
+    
+    padding: 10px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    position: relative;
+    padding: 2rem;
+    border-radius: 1rem;
+  }
+  .pdf-container p {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .remove-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
+
+
+
+
+
+
+
+
+  @media only screen and (max-width: 768px) {
+    #workArea {
+        grid-template-columns: repeat(1, 1fr); /* Adjusted grid columns for smaller screens */
+        margin-left: .1rem; /* Adjusted margin for smaller screens */
+        margin-right: .1rem; /* Adjusted margin for smaller screens */
+    }
+
+    .remove-icon {
+       margin-bottom: 1rem;
+      }
+      .image-container p {
+        font-weight: bold;
+        margin-bottom: 10px;
+        margin-top: 1rem;
+      }
+}
+

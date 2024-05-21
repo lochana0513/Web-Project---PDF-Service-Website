@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Plus</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/split.css">
+    <link rel="icon" href="favicon.ico" sizes="16x16" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" sizes="32x32" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+<body>
+    <section class="home" id="home">
+        <div class="header-div">
+            <h1>PDF Plus</h1>
+        </div>
+        <div class="description-div">
+            <h2>Split PDF file</h2>
+            <h4>Easily extract individual pages or entire sets for seamless conversion into separate PDF files.</h4>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="upload-div">
+            <div class="upload-btn-wrapper">
+                <label class="btn" for="fileInput">Upload files</label>
+                <input type="file" id="fileInput" multiple accept="application/pdf" style="display: none;" />
+            </div>
+        </div>
+    
+        <div class="upload-div maindiv" style="display: none;">
+            <div class="button-div">
+                <button class=" winbtn win1-btn">Fixed range</button>
+                <button class=" winbtn win2-btn">Custom ranges</button>
+            </div>
+            <div class="win-container win1-container">
+                <div class="sub1 full-size">
+                    <h1></h1>
+                </div>
+            </div>
+            <div class="win-container win2-container">
+                <div class="sub2 full-size">
+                    <div class="range-div">
+                        <div class="range-input-container">
+                            <div class="range-inputs">
+                           
+                            </div>
+                          </div>
+                      </div>
+                      <button id="addRangeBtn">Add  Range</button>
+                </div>
+            </div>
+        </div>
+    
+        <div id="workArea" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        
+        <div class="upload-div">
+            <button class="btn-large" id="split-button" type="button">Split PDF</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Adithya | All Rights Reserved | </p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+    </footer>
+
+    <!-- Include PDF-lib library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.6.0/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+
+    <!-- Include merge.js script -->
+    <script src="js/split.js"></script>
+
+   
+  
+</body>
+</html>

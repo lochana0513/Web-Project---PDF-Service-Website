@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Plus</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/PDFtoJPG.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="favicon.ico" sizes="16x16" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" sizes="32x32" type="image/x-icon">
+    <script>// Specify worker source for PDF.js
+        window.pdfjsWorkerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.8.335/pdf.worker.min.js';
+        </script>
+</head>
+<body>
+    <section class="home" id="home">
+        <div class="header-div">
+            <h1>PDF Plus</h1>
+        </div>
+        <div class="description-div">
+            <h2>PDF to JPG</h2>
+            <h4>
+                Effortlessly transform each PDF page into a JPG or extract all embedded images from the PDF with ease.</h4>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="upload-div">
+            <div class="upload-btn-wrapper">
+                <label class="btn" for="fileInput">Upload files</label>
+                <input type="file" id="fileInput"  style="display: none;" />
+            </div>
+        </div>
+
+        <div id="workArea" class="pdf-grid" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        
+        <div class="upload-div">
+            <button class="btn-large" id="pdftoimg-button" type="button">Convert</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Adithya | All Rights Reserved | </p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.8.335/pdf.min.js"></script>
+
+    <!-- Include PDF-lib library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+
+    <!-- Include your PDF to JPG script -->
+    <script src="js/PDFtoJPG.js"></script>
+</body>
+</html>

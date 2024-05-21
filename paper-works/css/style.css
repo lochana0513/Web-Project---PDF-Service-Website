@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'poppins',sans-serif;
+
+}
+
+
+
+:root
+{
+    --bg-color:#fdfdfd;
+    --text-color:#333;
+    --main-color:#f07167;
+    --white-color:#fdfdfd;
+    --shadow-color: rgba(0,0,0,.2);
+    --text-sub-color:#fed9b7;
+    --text-sub-color1:#0d3b66;
+    --text-sub-color2:#000000;
+
+}
+
+html
+{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.home .header-div {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.home .header-div h1{
+    color: var(--main-color);
+    text-align: center;
+    font-size: 5rem;
+}
+
+.description-div h2{
+    color: var(--text-sub-color);
+    text-align: center;
+    font-size: 4rem;
+}
+
+.description-div h4{
+    color: var(--text-color);
+    text-align: center;
+    font-size: 2rem;
+   
+    margin-top: 3rem;
+}
+
+
+
+section{
+  
+    padding: 10rem 7% 2rem;
+
+}
+
+
+.services-div  {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates 4 columns */
+    gap: 20px; /* Adjust the gap between items as needed */
+}
+
+.service-div {
+    height: 270px; /* Fixed height for each "cell" */
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 2rem;
+    border: 1px solid;
+    /* No need for margin-top here unless you want extra space between "rows" */
+}
+
+
+
+.box{
+    
+    border: 1px solid var(--bg-color);
+    background-color: var(--bg-color);
+    cursor: pointer;
+    transition: all 0.4s;
+    align-items: center;
+   
+}
+
+.box:hover{
+     box-shadow: 0px 3px 12px 0px var(--main-color);
+     border: 1px solid transparent;
+}
+
+.service-img{
+    height: 100px;
+}
+
+.service-img img
+{
+    width: 100px;
+    height: 100px;
+    margin: 2rem;
+}
+
+.service-div h4
+{
+ margin-top: 3rem;
+ font-size: 2.5rem;
+ color: var(--text-sub-color1);
+}
+
+
+.service-div h5
+{
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--text-sub-color2);
+}
+
+.upload-div {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+     /* Example height - adjust as needed */
+     margin-bottom: 5rem;
+}
+
+.upload-btn-wrapper {
+   
+    overflow: hidden;
+    display: inline-block;
+    border: 2px solid var(--main-color);
+    color: #fff;
+    background-color: var(--main-color);
+    padding: 3rem 8rem;
+    border-radius: 2rem;
+    font-size: 3rem;
+    font-weight: bold; /* Consider changing to block if you want the wrapper to fill the width */
+}
+
+.btn-large {
+   
+    overflow: hidden;
+    display: inline-block;
+    border: 2px solid var(--main-color);
+    color: #fff;
+    background-color: var(--main-color);
+    padding: 3rem 8rem;
+    border-radius: 2rem;
+    font-size: 3rem;
+    font-weight: bold; 
+    /* Consider changing to block if you want the wrapper to fill the width */
+}
+
+
+input[type=file] {
+    
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 7%;
+    background: var(--main-color);
+    margin-top: 2rem;
+
+}
+
+.footer-text p{
+    font-size: 1.6rem;
+    color: var(--white-color);
+}
+
+.footer-iconTop a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--white-color);
+    border-radius: .8rem;
+    border: .2rem solid var(--main-color);
+    outline: .2rem solid transparent;
+
+}
+.footer-iconTop a:hover{
+     outline-color:  var(--white-color);
+}
+
+.footer-iconTop a i{
+    font-size: 2.4rem ;
+    color: #333;
+}
+
+
+@media (max-width:450px) 
+{
+    .home .header-div h1{
+        color: var(--main-color);
+        text-align: center;
+        font-size: 3rem;
+    }
+    
+    .home .description-div h2{
+        color: var(--text-sub-color);
+        text-align: center;
+        font-size: 2rem;
+       
+    }
+    
+    .home .description-div h4{
+        color: var(--text-color);
+        text-align: center;
+        font-size: 1rem;
+       
+        margin-top: 1rem;
+    }
+
+    .services-div {
+        flex-direction: column; /* Stack the .service-div elements vertically */
+        align-items: stretch; /* This makes the child divs stretch to fill the container width */
+    }
+    .service-div {
+        width: 100%; /* Each service-div will take the full width of the container */
+        margin: 10px 0; /* Adjusted margin for better spacing in a vertical layout */
+    }
+    
+
+    .services-div {
+        display: block; /* Change to block layout for mobile */
+      }
+    
+      .service-div {
+        height: auto; /* Let the height adjust dynamically based on content */
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        border-radius: 2rem;
+       
+        margin-bottom: 20px; /* Add margin between each service-div */
+      }
+
+      .upload-btn-wrapper {
+   
+       
+        padding: 2rem 5rem;
+        border-radius: 1rem;
+        font-size: 2rem;
+        font-weight: bold; /* Consider changing to block if you want the wrapper to fill the width */
+    }
+    
+
+    .btn-large
+    {
+        padding: 2rem 5rem;
+        border-radius: 1rem;
+        font-size: 2rem;
+        font-weight: bold; 
+    }
+    
+    
+}

@@ -1,0 +1,201 @@
+#workArea {
+    min-height: 300px;
+    border: 2px dashed #ccc;
+    margin: 20px;
+    padding: 20px;
+    display: grid;
+    justify-content: center;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    border-radius: 1rem;
+}
+
+.pdf-container {
+    margin-bottom: 20px;
+   
+    padding: 10px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    position: relative;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+  .pdf-container p {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .remove-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
+
+
+  .range-div {
+    margin-bottom: 10px;
+}
+.range-input-container {
+    margin-bottom: 5px;
+}
+.range-inputs {
+    display: flex;
+    align-items: center;
+}
+.remove-btn {
+    padding: 9px 20px;
+    background-color: #eb4629;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: -8px;
+    margin-left: 1rem;
+}
+
+  .range-div p{
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .range-input-container {
+    display: block;
+  }
+
+  
+
+
+
+input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 1rem
+}
+
+span {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#addRangeBtn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#addRangeBtn:hover {
+    background-color: #0056b3;
+}
+
+  .maindiv
+  {
+    min-height: 200px;
+    margin: 20px;
+    padding: 20px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+
+ 
+.button-div {
+    margin-bottom: 10px;
+}
+
+.winbtn
+{
+    display: inline-block;
+    padding: 1.2rem 2.8rem;
+    background: var(--main-color);
+    border-radius: .6rem;
+    box-shadow: 0 .2rem .5rem var(--shadow-color);
+    font-size: 1.6rem;
+    color: var(--white-color);
+    letter-spacing: .1rem;
+    border: .2rem solid transparent;
+    font-weight: 600;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  
+}
+.win-container {
+    display: none;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    border: 2px solid #ccc;
+    padding: 20px;
+}
+.full-size {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+
+  @media only screen and (max-width: 768px) {
+    #workArea {
+        grid-template-columns: repeat(1, 1fr); /* Adjusted grid columns for smaller screens */
+        margin-left: .1rem; /* Adjusted margin for smaller screens */
+        margin-right: .1rem; /* Adjusted margin for smaller screens */
+    }
+
+    .remove-icon {
+       margin-bottom: 1rem;
+      }
+      .image-container p {
+        font-weight: bold;
+        margin-bottom: 10px;
+        margin-top: 1rem;
+      }
+
+      .winbtn
+{
+    display: inline-block;
+    padding: 1rem 1.2rem;
+    background: var(--main-color);
+    border-radius: .6rem;
+    box-shadow: 0 .2rem .5rem var(--shadow-color);
+    font-size: 1rem;
+    color: var(--white-color);
+    letter-spacing: .1rem;
+    border: .2rem solid transparent;
+    font-weight: 600;
+    margin-right: .5rem;
+    margin-left: .5rem;
+  
+}
+
+.range-inputs {
+  display: grid;
+  align-items: center;
+}
+
+.remove-btn {
+ 
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: -1px;
+ 
+}
+
+
+}
+

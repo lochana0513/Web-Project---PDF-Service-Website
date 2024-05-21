@@ -1,0 +1,23 @@
+.pdf-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust the minimum width as needed */
+    grid-auto-rows: auto; /* Automatically adjust row height */
+    grid-gap: 10px; /* Adjust as needed */
+    justify-content: start; /* Align pages to the start of the grid */
+    min-height: 300px;
+    border: 2px dashed #ccc;
+    margin-bottom: 2rem;
+}
+
+.page-container {
+    border: 1px solid #ccc; /* Border for each page container */
+    width: 100%; /* Ensure each page container fills the grid cell */
+    height: 100%; /* Ensure each page container fills the grid cell */
+}
+
+canvas {
+    width: 100%; /* Make canvas fill its container */
+    height: 100%; /* Make canvas fill its container */
+}
+
+
